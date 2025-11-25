@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Media og dialog</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <!-- autoplay -->
+      <video width="400px" controls loop muted poster="./assets/479807.jpg">
+        <source src="./assets/slush-treats.mp4" type="video/mp4" />
+        Your browser does not support this format.
+      </video>
+      <audio controls loop autoplay muted></audio>
+      <source src="./assets/ra-nggyu.mp3" type="audio/mp3" />
+      <a href="assets/ra-nggyu.mp3">Download this song!</a>
+    </main>
+  </body>
 </html>
