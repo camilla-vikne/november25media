@@ -3,7 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Media and dialog</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <video width="400px" controls loop muted poster="./assets/479807.jpg">
+        <source src="./assets/slush-treats.mp4" type="video/mp4" />
+        Your browser does not support this format.
+      </video>
+
+      <audio controls loop autoplay muted>
+        <source src="./assets/ra-nggyu.mp3" type="audio/mp3" />
+      </audio>
+      <a href="./assets/ra-nggyu.mp3">Download this song!</a>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/yXQViqx6GMY?si=YiuEpXxDH64KA2TF"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </main>
+  </body>
 </html>
