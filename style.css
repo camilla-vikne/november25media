@@ -1,0 +1,23 @@
+#dialog {
+  height: 400px;
+  width: 600px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#open-btn,
+#close-btn {
+  height: 70px;
+  width: 150px;
+  border: none;
+  background-color: darkgreen;
+  border-radius: 20px;
+  font-size: 22px;
+}
+
+#inner-dialog {
+  background-color: lightgreen;
+}

@@ -8,7 +8,28 @@
   </head>
   <body>
     <main>
-      <video width="400px" controls loop muted poster="./assets/479807.jpg">
+      <div id="dialog">
+        <button
+          id="open-btn"
+          onclick="document.getElementById('dialog-element').showModal()"
+        >
+          Open me!
+        </button>
+        <dialog id="dialog-element">
+          <div id="inner-dialog">
+            <video width="200px" autoplay muted loop>
+              <source src="./assets/slush-treats.mp4" type="video/mp4" />
+            </video>
+            <button
+              id="close-btn"
+              onclick="document.getElementById('dialog-element').close()"
+            >
+              Close me!
+            </button>
+          </div>
+        </dialog>
+      </div>
+      <!-- <video width="400px" controls loop muted poster="./assets/479807.jpg">
         <source src="./assets/slush-treats.mp4" type="video/mp4" />
         Your browser does not support this format.
       </video>
@@ -33,7 +54,7 @@
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      ></iframe> -->
     </main>
   </body>
 </html>
